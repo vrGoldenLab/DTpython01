@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Title | GoldenLab Python</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://vrgoldenlab.github.io/DTpython01/2021/05/25/datatype%EB%B3%B5%EC%8A%B5.html" />
+<meta property="og:url" content="https://vrgoldenlab.github.io/DTpython01/2021/05/25/datatype%EB%B3%B5%EC%8A%B5.html" />
+<meta property="og:site_name" content="GoldenLab Python" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-25T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"An easy to use blogging platform with support for Jupyter Notebooks.","url":"https://vrgoldenlab.github.io/DTpython01/2021/05/25/datatype%EB%B3%B5%EC%8A%B5.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://vrgoldenlab.github.io/DTpython01/2021/05/25/datatype%EB%B3%B5%EC%8A%B5.html"},"headline":"Title","dateModified":"2021-05-25T00:00:00-05:00","datePublished":"2021-05-25T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/DTpython01/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vrgoldenlab.github.io/DTpython01/feed.xml" title="GoldenLab Python" /><link rel="shortcut icon" type="image/x-icon" href="/DTpython01/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/DTpython01/">GoldenLab Python</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/DTpython01/about/">About Me</a><a class="page-link" href="/DTpython01/search/">Search</a><a class="page-link" href="/DTpython01/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-05-25T00:00:00-05:00" itemprop="datePublished">
+        May 25, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/vrGoldenLab/DTpython01/tree/master/_notebooks/2021-05-25-datatype복습.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/DTpython01/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/vrGoldenLab/DTpython01/master?filepath=_notebooks%2F2021-05-25-datatype%EB%B3%B5%EC%8A%B5.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/DTpython01/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/vrGoldenLab/DTpython01/blob/master/_notebooks/2021-05-25-datatype복습.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/DTpython01/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-05-25-datatype복습.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#45936;&#51060;&#53552;-&#51060;&#54644;&#54616;&#44592;"><strong>&#45936;&#51060;&#53552; &#51060;&#54644;&#54616;&#44592;</strong><a class="anchor-link" href="#&#45936;&#51060;&#53552;-&#51060;&#54644;&#54616;&#44592;"> </a></h1><ul>
+<li>정보 (information)을 얻기 위한 재료  </li>
+<li>데이터 혹은 자료라고 이야기하며 구체적으로 이야기 할 때는 값(value) 라고 한다.   
+<pre><code>  신체검사시 키,몸무게,시력 등의 구체적인 특성이 value  
+  이 값을 모아 '2021년 신체검사 결과'로 만들면 data  
+  신장을 체중으로 나누어 비만도 위험군을 선별하면 information</code></pre>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="variable">variable<a class="anchor-link" href="#variable"> </a></h3><ul>
+<li>변수 - 값을 저장하는 공간   </li>
+<li>변수명 - 값을 저장하는 공간의 이름</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#48320;&#49688;&#50752;-&#44288;&#44228;&#46108;-&#51452;&#50836;-&#51089;&#50629;">&#48320;&#49688;&#50752; &#44288;&#44228;&#46108; &#51452;&#50836; &#51089;&#50629;<a class="anchor-link" href="#&#48320;&#49688;&#50752;-&#44288;&#44228;&#46108;-&#51452;&#50836;-&#51089;&#50629;"> </a></h3><ul>
+<li>변수를 생성(declaration)해 값 저장하기(assignment)</li>
+<li>변수를 호출해(call)하고 값 참조(reference) </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">cal_test</span> <span class="o">=</span> <span class="mi">10</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="mi">10</span><span class="o">/</span><span class="mi">10</span> <span class="c1"># 계산값을 변수명 cal_text에 저장, 변수 생성과 값저장을 동시에 수행</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cal_test</span><span class="p">)</span> <span class="c1">#변수 num1을 호출해 참조하여 출력</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#48320;&#49688;&#47749;-&#44061;&#52404;-&#51060;&#47492;-&#51221;&#54616;&#44592;-&#44592;&#51456;">&#48320;&#49688;&#47749; &#44061;&#52404; &#51060;&#47492; &#51221;&#54616;&#44592; &#44592;&#51456;<a class="anchor-link" href="#&#48320;&#49688;&#47749;-&#44061;&#52404;-&#51060;&#47492;-&#51221;&#54616;&#44592;-&#44592;&#51456;"> </a></h3><p>객체 - 파이썬을 구성하는 모든 요소</p>
+<ul>
+<li>알파벳,숫자,공백을 표현하기 위한 _</li>
+<li>객체명은 첫문자로 숫자를 사용할 수 없다</li>
+<li>혼동하기 쉬운 문자 변수는 사용하지 않는것이 좋다.   
+<pre><code>    'l'(소문자 엘),I(대문자 아이), O(대문자 오),o(소문자 오) 등</code></pre>
+</li>
+<li><p>파이썬이 사용하는 객체명(키워드)는 사용할 수 없다</p>
+
+<pre><code>'False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class',    
+'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for','from',    
+'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or','pass',   
+'raise', 'return', 'try', 'while', 'with', 'yield'</code></pre>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54028;&#51060;&#50028;-&#54364;&#51456;-&#51089;&#47749;-&#44592;&#51456;"><strong>&#54028;&#51060;&#50028; &#54364;&#51456; &#51089;&#47749; &#44592;&#51456;</strong><a class="anchor-link" href="#&#54028;&#51060;&#50028;-&#54364;&#51456;-&#51089;&#47749;-&#44592;&#51456;"> </a></h3><ul>
+<li>snake_case: 모든 단어를 소문자로 구성하고 단어 사이를 _로 구분  </li>
+<li>CamelCase: 단어의 첫 문자를 대문자로 나머지는 소문자로 공백없이 </li>
+<li>mixedCase: CamelCase와 같으나 객체명 첫글자는 소문자 사용</li>
+</ul>
+<p><a href="https://www.python.org/dev/peps/pep-0008/#id34">https://www.python.org/dev/peps/pep-0008/#id34</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="data-type"><strong>data type</strong><a class="anchor-link" href="#data-type"> </a></h3><p>값들의 특성에 따른 분류
+8가지의 기본 data type를 학습합니다.</p>
+<ol>
+<li>숫자형(정수,실수)</li>
+<li>문자열</li>
+<li>bool : 판단의 결과 참, 거짓</li>
+<li>튜플 </li>
+<li>리스트</li>
+<li>집합</li>
+<li>딕션너리</li>
+<li>형변환 </li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.&#49707;&#51088;&#54805;">1.&#49707;&#51088;&#54805;<a class="anchor-link" href="#1.&#49707;&#51088;&#54805;"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>정수: 소숫점이 없는 숫자.자료형명 int<br />
+실수: 소숫점이 있는 숫자. 자료형명 float</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mf">00.00310</span>
+<span class="n">d</span> <span class="o">=</span> <span class="o">.</span><span class="mi">554</span>
+<span class="n">e</span> <span class="o">=</span> <span class="mf">15.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39;   &#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="o">/</span><span class="n">d</span><span class="p">,(</span><span class="n">e</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">d</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39;   &#39;</span><span class="p">)</span>
+
+<span class="c1"># 실수값에 영향이 없는 0은 제거된다.</span>
+<span class="c1"># 산술연산자 +,-,*,/ 사용 가능</span>
+<span class="c1"># 나눗셈을 제외한 정수간 계산의 결과값은 정수,정수와 실수 간 계산값은 실수</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">type_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">type_list</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span><span class="n">type_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="&#49328;&#49696;&#50672;&#49328;&#51088;">&#49328;&#49696;&#50672;&#49328;&#51088;<a class="anchor-link" href="#&#49328;&#49696;&#50672;&#49328;&#51088;"> </a></h5><ul>
+<li>사칙연산자 +, -, * </li>
+<li>제곱을 나타내는 **  </li>
+<li>나머지를 산출하는 % (Modulus),   </li>
+<li>나누기에 소숫점 이하를 버리는 // 연산자(Floor Division) </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="&#48708;&#44368;&#50672;&#49328;&#51088;">&#48708;&#44368;&#50672;&#49328;&#51088;<a class="anchor-link" href="#&#48708;&#44368;&#50672;&#49328;&#51088;"> </a></h5><ul>
+<li>관계연산자로도 불리운다</li>
+<li>등호(==), 같지 않음(!=), 부등호(&lt;, &gt;, &lt;=, &gt;=) 등이 있다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="mi">100</span>
+<span class="n">num1</span> <span class="o">+=</span> <span class="mi">100</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">num2</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">num2</span> <span class="o">+=</span> <span class="n">num3</span>   <span class="c1"># num2 = num2 + num3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+<span class="n">num2</span> <span class="o">-=</span> <span class="n">num3</span>   <span class="c1"># num2 = num2 - num3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+<span class="n">num2</span> <span class="o">*=</span> <span class="n">num3</span>   <span class="c1"># num2 = num2 * num3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.&#47928;&#51088;&#50676;"><strong>2.&#47928;&#51088;&#50676;</strong><a class="anchor-link" href="#2.&#47928;&#51088;&#50676;"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="&#47928;&#51088;&#50676;&#51008;-&#53581;&#49828;&#53944;&#51032;-&#44592;&#48376;-&#51088;&#47308;&#54805;">&#47928;&#51088;&#50676;&#51008; &#53581;&#49828;&#53944;&#51032; &#44592;&#48376; &#51088;&#47308;&#54805;<a class="anchor-link" href="#&#47928;&#51088;&#50676;&#51008;-&#53581;&#49828;&#53944;&#51032;-&#44592;&#48376;-&#51088;&#47308;&#54805;"> </a></h5><p>문자를 사슬(string)처럼 나영한 값, 자료형명 str</p>
+<p>변수명이나 함수명과 구분하기 위해 따옴표로 열고 닫아 생성합니다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="&#47928;&#51088;&#50676;-&#45236;&#51032;-&#53945;&#49688;&#53412;">&#47928;&#51088;&#50676; &#45236;&#51032; &#53945;&#49688;&#53412;<a class="anchor-link" href="#&#47928;&#51088;&#50676;-&#45236;&#51032;-&#53945;&#49688;&#53412;"> </a></h5>
+<pre><code>\'   =&gt; '
+\"   =&gt; "
+\\   =&gt; \
+\n   =&gt; 줄바꿈(newline), enter
+\t   =&gt; 줄맞춤(intent),tap</code></pre>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;셀 병합 </span><span class="se">\n</span><span class="s1"> </span><span class="se">\t</span><span class="s1"> </span><span class="se">\&#39;</span><span class="s1">shift key</span><span class="se">\&#39;</span><span class="s1">를 누른후 </span><span class="se">\n</span><span class="s1"> </span><span class="se">\t</span><span class="s1"> </span><span class="se">\t</span><span class="s1">병합을 원하는 셀들을 다중선택 후 shift+M&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># \n없이 enter로 줄바꿈,\&#39;,\&quot;없이 따옴표 사용 가능</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;{</span>
+<span class="s1">    마크다운 전환: ctrl + m m </span>
+<span class="s1">    코드로 전환: ctrl + m y </span>
+<span class="s1">    &quot; 사용 가능  &quot; &#39;  &#39;</span>
+<span class="s1">}&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="c1">#주민번호,우편번호등 값이 0으로 시작되는 정수 </span>
+<span class="c1">#파이썬에서는 정수가 0으로 시작하면 정수값 입력오류로 문법 오류 처리 </span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">06002</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">210101</span><span class="o">-</span><span class="mi">1111111</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;210101-1111111&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="&#47928;&#51088;&#50676;&#50640;&#49436;-&#49324;&#50857;&#46104;&#45716;-&#54632;&#49688;">&#47928;&#51088;&#50676;&#50640;&#49436; &#49324;&#50857;&#46104;&#45716; &#54632;&#49688;<a class="anchor-link" href="#&#47928;&#51088;&#50676;&#50640;&#49436;-&#49324;&#50857;&#46104;&#45716;-&#54632;&#49688;"> </a></h5><ul>
+<li>join : 문자열을 원하는 글자로 더한다.</li>
+<li>split : 문자열을 원하는 글자로 나눈다.</li>
+<li>strip : 문자열 앞뒤의 공백을 지운다. 문자열 내부의 공백은 지우지 않는다.</li>
+<li>replace : 문자열의 특정 글자를 다른 글자로 바꾼다.</li>
+<li>in : 문자열 안에 해당 글자가 있는지 확인</li>
+<li>not in : 문자열 안에 해당 글자가 없는지 확인 </li>
+<li>count : 특정 글자가 문자열에 몇번 사용되었는지 확인 </li>
+<li>find : 문자열에서 특정 글자의 위치정보 확인</li>
+<li>capitalize : 문자열의 첫 글자를 대문자로 변환</li>
+<li>lower : 모든 글자를 소문자로 변환</li>
+<li>upper: 모든 글자를 대문자로 변환</li>
+<li>starstwith : 해당 문자열이 특정 글자로 시작되는지 확인</li>
+<li>endswith : 해당 문자열이 특정 글자로 끝나늕 확인</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Welcome to python&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;     welcome    to python world    &#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;welcome to python world&#39;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;py&#39;</span><span class="p">,</span><span class="s1">&#39;Py&#39;</span><span class="p">))</span>
+<span class="n">text_1</span> <span class="o">=</span> <span class="s1">&#39;welcome to python world&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Py&#39;</span> <span class="ow">in</span> <span class="n">text_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Py&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">text_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text_1</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text_1</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;py&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text_1</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text_1</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text_1</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text_1</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text_1</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text_1</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.bool"><strong>3.bool</strong><a class="anchor-link" href="#3.bool"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>주어진 조건 안에서 참,거짓을 판단해서 결과를 담는 자료형
+값 True,False</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">==</span> <span class="mi">12</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;apple&#39;</span> <span class="o">==</span> <span class="s1">&#39;APPLE&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">!=</span> <span class="mi">12</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="&#45436;&#47532;&#50672;&#49328;&#51088;">&#45436;&#47532;&#50672;&#49328;&#51088;<a class="anchor-link" href="#&#45436;&#47532;&#50672;&#49328;&#51088;"> </a></h5><ul>
+<li>조건식과 조건식을 연결하는 연산자 
+<pre><code>  논리합 =&gt; a and b : a나 b 모두 참일때만 참 
+  논리곱 =&gt; a or b : a나 b 중 하나만 참이어도 참
+  부정   =&gt; not a : a가 참이면 거짓,거짓이면 참</code></pre>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">a</span> <span class="o">=</span>  <span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">11</span> <span class="c1">#True</span>
+<span class="n">b</span> <span class="o">=</span>  <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">11</span> <span class="c1">#False</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">a</span> <span class="ow">and</span> <span class="n">a</span><span class="p">)</span> <span class="c1"># True and True</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">a</span> <span class="ow">and</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># True and False</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">b</span> <span class="ow">and</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># False and False </span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">a</span> <span class="ow">or</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># True or False </span>
+<span class="nb">print</span><span class="p">(</span> <span class="ow">not</span> <span class="n">a</span> <span class="p">)</span> <span class="c1"># not True</span>
+<span class="nb">print</span><span class="p">(</span> <span class="ow">not</span> <span class="n">a</span> <span class="ow">or</span> <span class="p">(</span><span class="n">a</span> <span class="ow">or</span> <span class="n">b</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="o">+</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/DTpython01/2021/05/25/datatype%EB%B3%B5%EC%8A%B5.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/DTpython01/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/DTpython01/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/DTpython01/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/DTpython01/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/DTpython01/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
